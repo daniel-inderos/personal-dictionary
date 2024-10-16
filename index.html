@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Dictionary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="background-canvas"></canvas>
+    <button id="theme-toggle">Toggle Theme</button>
+    <button id="toggle-animation">Toggle Animation</button>
+    <div id="app">
+        <h1>Interactive Dictionary</h1>
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+            <div id="progress-text"></div>
+        </div>
+        <div class="word-container">
+            <div id="word-display"></div>
+            <div class="word-type">noun</div>
+        </div>
+        <input type="text" id="user-definition" placeholder="Enter your definition">
+        <div class="button-group">
+            <button id="submit-definition">Submit</button>
+            <button id="skip-word">Skip</button>
+            <button id="prev-word">Previous</button>
+            <button id="next-word">Next</button>
+        </div>
+        <button id="download-dictionary">Download My Dictionary</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
