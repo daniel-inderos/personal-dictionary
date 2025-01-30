@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,28 +9,43 @@
 </head>
 <body>
     <canvas id="background-canvas"></canvas>
-    <button id="theme-toggle">Toggle Theme</button>
-    <button id="toggle-animation">Toggle Animation</button>
-    <div id="app">
-        <h1>Interactive Dictionary</h1>
-        <div class="progress-container">
-            <div id="progress-bar"></div>
-            <div id="progress-text"></div>
+    <div class="container">
+        <div id="app">
+            <h1 class="h1">Interactive Dictionary</h1>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div id="progress" class="progress" data-label="0/1000">
+                    </div>
+                </div>
+            </div>
+            <div class="word-container">
+                <div id="word-display" class="word-display"></div>
+                <div class="word-type">noun</div>
+            </div>
+            <div class="input-group">
+                <input type="text" id="user-definition" class="input" placeholder="Enter your definition">
+            </div>
+            <div class="button-group">
+                <button id="submit-definition" class="button">
+                    <span>Submit</span>
+                </button>
+                <button id="skip-word" class="button">
+                    <span>Skip</span>
+                </button>
+                <button id="prev-word" class="button">
+                    <span>Previous</span>
+                </button>
+                <button id="next-word" class="button">
+                    <span>Next</span>
+                </button>
+            </div>
+            <button id="download-dictionary" class="button">
+                <span>Download Dictionary</span>
+            </button>
         </div>
-        <div class="word-container">
-            <div id="word-display"></div>
-            <div class="word-type">noun</div>
-        </div>
-        <input type="text" id="user-definition" placeholder="Enter your definition">
-        <div class="button-group">
-            <button id="submit-definition">Submit</button>
-            <button id="skip-word">Skip</button>
-            <button id="prev-word">Previous</button>
-            <button id="next-word">Next</button>
-        </div>
-        <button id="download-dictionary">Download My Dictionary</button>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
+      
